@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalkEaza Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4CAF50',
+                        primaryDark: '#45a049',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-primary">WalkEaza</h1>
+            <nav class="hidden md:block">
+                <ul class="flex space-x-6">
+                    <li><a href="./index.html" class="hover:text-primary transition">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-primary transition">About</a></li>
+                    <li><a href="./services.html" class="font-medium text-primary border-b-2 border-primary py-2">Services</a></li>
+                    <li><a href="./gallery.html" class="hover:text-primary transition">Gallery</a></li>
+                    <li><a href="./contact.html" class="hover:text-primary transition">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-primary">Our Walking Experiences</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Discover our range of walking tours designed for all levels of experience and adventure.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="/a1/city.jpg" alt="City Walks" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">City Exploration</h3>
+                        <p class="text-gray-600 mb-4">Discover urban landscapes with our knowledgeable guides who will show you the history and hidden gems of each city.</p>
+                        <span class="inline-block bg-primary/10 text-primary font-medium py-1 px-3 rounded-full">From $45/person</span>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="/a1/nature.jpeg" alt="Nature Hikes" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Nature Hikes</h3>
+                        <p class="text-gray-600 mb-4">Immerse yourself in breathtaking natural scenery with routes suitable for all fitness levels.</p>
+                        <span class="inline-block bg-primary/10 text-primary font-medium py-1 px-3 rounded-full">From $65/person</span>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <img src="/a1/tour.png" alt="Custom Tours" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-3 text-primary">Custom Tours</h3>
+                        <p class="text-gray-600 mb-4">Tailor-made walking experiences designed specifically for your group's interests and abilities.</p>
+                        <span class="inline-block bg-primary/10 text-primary font-medium py-1 px-3 rounded-full">Custom Pricing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-12 text-primary">What Our Walkers Say</h2>
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <blockquote class="text-xl italic text-gray-700 mb-6">
+                        "The coastal walk with WalkEaza was the highlight of our vacation. Our guide was knowledgeable and made the experience unforgettable."
+                    </blockquote>
+                    <cite class="font-semibold text-gray-800">- James Wilson</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Ready to Start Your Adventure?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Book your walking tour today and experience the world at your own pace.</p>
+            <a href="contact.html" class="inline-block bg-white text-primary font-medium py-3 px-8 rounded-lg hover:bg-gray-100 transition">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2023 WalkEaza. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
